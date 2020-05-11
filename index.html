@@ -88,8 +88,37 @@
 
      <!-- About Us -->
      <section id="about" class="about">
-         
+         <div class="container">
+             <div class="row">
+                 <h3 class="center light grey-text text-darken-3">About Us</h3>
+                 <div class="col m6 light">
+                     <h5>We Are Professionals</h5>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus numquam laudantium tempore nulla
+                         tenetur quo quasi? Consequatur magni iure possimus molestiae laudantium impedit ad! Recusandae
+                         non delectus modi consectetur asperiores.</p>
+                 </div>
+                 <div class="col m6 light">
+                     <p>WEB DEVELOPMENT</p>
+                     <div class="progress">
+                         <div class="determinate" style="width: 98%"></div>
+                     </div>
+                     <p>MOBILE APP DEVELOPMENT</p>
+                     <div class="progress">
+                         <div class="determinate" style="width: 90%"></div>
+                     </div>
+                     <p>SOFTWARE DEVELOPMENT SECURITY</p>
+                     <div class="progress">
+                         <div class="determinate" style="width: 93%"></div>
+                     </div>
+                 </div>
+             </div>
+         </div>
      </section>
+
+     <!-- Clients -->
+     <div class="parallax-container">
+         <div class="parallax"><img src="img/slider/6.jpg"></div>
+     </div>
 
      <!--JavaScript at end of body for optimized loading-->
      <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -104,6 +133,9 @@
              transition: 600,
              interval: 3000
          });
+
+        const parallax = document.querySelectorAll('.parallax');
+        M.Parallax.init(parallax);
      </script>
  </body>
 
